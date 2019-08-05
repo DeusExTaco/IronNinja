@@ -1,0 +1,11 @@
+/Users/adam/Documents/school/c#/IronNinja/bin/Debug/netcoreapp2.2/IronNinja.deps.json
+/Users/adam/Documents/school/c#/IronNinja/bin/Debug/netcoreapp2.2/IronNinja.runtimeconfig.json
+/Users/adam/Documents/school/c#/IronNinja/bin/Debug/netcoreapp2.2/IronNinja.runtimeconfig.dev.json
+/Users/adam/Documents/school/c#/IronNinja/bin/Debug/netcoreapp2.2/IronNinja.dll
+/Users/adam/Documents/school/c#/IronNinja/bin/Debug/netcoreapp2.2/IronNinja.pdb
+/Users/adam/Documents/school/c#/IronNinja/obj/Debug/netcoreapp2.2/IronNinja.csprojAssemblyReference.cache
+/Users/adam/Documents/school/c#/IronNinja/obj/Debug/netcoreapp2.2/IronNinja.csproj.CoreCompileInputs.cache
+/Users/adam/Documents/school/c#/IronNinja/obj/Debug/netcoreapp2.2/IronNinja.AssemblyInfoInputs.cache
+/Users/adam/Documents/school/c#/IronNinja/obj/Debug/netcoreapp2.2/IronNinja.AssemblyInfo.cs
+/Users/adam/Documents/school/c#/IronNinja/obj/Debug/netcoreapp2.2/IronNinja.dll
+/Users/adam/Documents/school/c#/IronNinja/obj/Debug/netcoreapp2.2/IronNinja.pdb
