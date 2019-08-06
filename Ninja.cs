@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-abstract class Ninja
+public abstract class Ninja
 {
     protected int calorieIntake;
     public List<IConsumable> ConsumptionHistory;

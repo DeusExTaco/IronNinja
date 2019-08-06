@@ -8,6 +8,11 @@ public class SweetTooth : Ninja
     {
         get
         {
+            if (this.calorieIntake > 1500)  
+            {
+                Console.WriteLine("This Ninja is full!");
+                return true;
+            }
             return false;
         }
     }
@@ -15,12 +20,8 @@ public class SweetTooth : Ninja
     public override void Consume(IConsumable item)
     {
         // provide override for Consume
-        int i = 0;
-        foreach (object z in ConsumptionHistory)
-        {
-            Console.WriteLine(ConsumptionHistory[i].Calories);
-            i++;
-        }
-
+        this.calorieIntake += item.Calories;
+        ConsumptionHistory.Add(item);
+        Console.WriteLine("Food: " + item.Name + " Spicy: " + item.IsSpicy + " | Sweet: " + item.IsSweet);
     }
 }

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-interface IConsumable
+public interface IConsumable
 {
     string Name {get;set;}
     int Calories {get;set;}
