@@ -10,6 +10,7 @@ public class SpiceHound : Ninja
         {
             if (calorieIntake > 1200)  
             {
+                Console.WriteLine("This SpiceHound is full!");
                 return true;
             }
             return false;
@@ -18,9 +19,13 @@ public class SpiceHound : Ninja
 
     public override void Consume(IConsumable item)
     {
-        // provide override for Consume
         this.calorieIntake += item.Calories;
+
+        if (item.IsSpicy)
+        {
+            this.calorieIntake -= 5;
+        }
         ConsumptionHistory.Add(item);
-        Console.WriteLine("Food: " + item.Name + " Spicy: " + item.IsSpicy + " | Sweet: " + item.IsSweet);
+        System.Console.WriteLine(item.GetInfo());
     }
 }

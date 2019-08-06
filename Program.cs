@@ -11,8 +11,27 @@ namespace IronNinja
             SweetTooth mySweetTooth = new SweetTooth();
             SpiceHound mySpiceHound = new SpiceHound();
 
-            mySweetTooth.Consume(myBuffet.Serve());
-            System.Console.WriteLine(mySweetTooth.ConsumptionHistory.Count);
+            int sweetCount = 0;
+            int spicyCount = 0;
+
+            while (mySweetTooth.IsFull == false){
+                mySweetTooth.Consume(myBuffet.Serve());
+                sweetCount ++;
+            }
+            while (mySpiceHound.IsFull == false)
+            {
+                mySpiceHound.Consume(myBuffet.Serve());
+                spicyCount ++;
+            }
+
+            if (sweetCount > spicyCount)
+            {
+                System.Console.WriteLine("mySweetTooth has consumed the most items. Items consumed: " + sweetCount);
+            }
+            else 
+            {
+                System.Console.WriteLine("mySpiceHound has consumed the most items. Items consumed: " + spicyCount);
+            }
         }
 
     }
